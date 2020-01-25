@@ -1,0 +1,15 @@
+<div class = "registerDivContainer">
+    <div>
+        <span>Username:</span> <input id="username" type="text" style="background-color: #ffffff;"><br>
+
+    </div>
+    <div>
+        <span>Password:</span> <input id="password" type="password" style="background-color: #ffffff;"><br>
+    </div>
+    <div>
+        <button type="button" onClick="window.loginPage()">Login</button>
+    </div>
+    <div>
+        <button type="button" onClick="window.registerPage()">Register</button>
+    </div>
+</div>

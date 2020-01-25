@@ -1,0 +1,63 @@
+<div class="row" >
+   <p>
+    <h4 class ="user">CURRENT USER - &nbsp;  &nbsp; &nbsp;</h4>
+    <h4 id="username" ></h4>
+   </p>
+   
+    <button style = "float: right;" type="button" onClick="window.logoutPage()">Logout</button>
+</div>
+
+<div class="row">
+        
+        <div>
+            <h4>Follow </b></h4>
+            <input type="text" id="followId" class="form-control rounded-0" style="width: 50%;background-color: #ffffff;" placeholder="Search User">
+            <button id="followbutton" type="button" onClick="window.follow()" style="padding-bottom: 10px;">Follow</button>
+        </div>
+
+        <div>
+            <h4><b>My Followers : </b></h4>
+            <div class>
+                <ul id='followerList' ></ul>
+            </div>
+        </div>
+
+        <div>
+            <h4><b>Following : </b></h4>
+            <div>
+                <ul id='followingList'></ul>
+            </div>
+        </div>
+</div>
+
+<div class="row">
+
+        <div class="form-group" >
+            <textarea id="tweettext" class="form-control rounded-0" cols="10" placeholder="Tweet here" style = "background-color: #ffffff;"></textarea>
+            <button type="button" onClick="window.tweet()" style="padding-bottom: 40px;">Tweet</button>
+        </div>
+
+        <div class="form-group" >
+            <input type="text" id="searchhashtag" class="form-control rounded-0" style="width: 80%; background-color: #ffffff;" placeholder="Search Hashtags">
+            <button type="button" onClick="window.gethashtag()" style="padding-bottom: 40px;">Search Hastag</button>
+            <h4><b>Result : </b></h4>
+            <div class="row">
+                <ul id='hashtag-list'></ul>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="searchmentions" class="form-control rounded-0" style="width: 80%; background-color: #ffffff;" placeholder="Search User Mentions">
+            <button type="button" onClick="window.getmentions()" style="padding-bottom: 40px;">Search Mentions</button>
+            <h4><b>Result : </b></h4>
+            <div class="row">
+                <ul id='mentions-list' ></ul>
+            </div>
+        </div>
+</div>
+
+
+<div class='row' id="newsDiv">
+            <p id="newsFeed">News Feed:</p>
+            <ul id='feedlist'></ul>
+</div>
